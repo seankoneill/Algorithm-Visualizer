@@ -1,23 +1,16 @@
 import javax.swing.JFrame;
 
 public class VisualizerView extends JFrame {
-  private VisualizerCanvas canvas;
-  public Visualizer controller;
+  private SortingPanel panel;
 
   VisualizerView() {
-    canvas = new VisualizerCanvas();
-    add(canvas);
+    panel = new SortingPanel();
+    add(panel);
     setSize(1000, 1000);
     setVisible(true);
   }
-
-  public void setAlgorithm(ComparisonSort a) {
-    canvas.setAlgorithm(a);
-  }
-
-  public void update() {
-    canvas.repaint();
+  
+  public SortingPanel getPanel() {
+    return panel;
   }
 }
-
-

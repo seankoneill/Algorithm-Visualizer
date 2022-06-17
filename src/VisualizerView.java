@@ -6,7 +6,7 @@ public class VisualizerView extends JFrame {
   VisualizerView() {
     panel = new SortingPanel();
     add(panel);
-    setSize(1000, 1000);
+    setSize(800, 650);
     setVisible(true);
   }
   
